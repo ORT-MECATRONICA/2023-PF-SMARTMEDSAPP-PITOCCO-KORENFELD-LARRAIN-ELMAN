@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:background="@drawable/fondoondulado2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    android:theme="@android:style/Theme.Light"
+    tools:context=".WelcomeFragment">
+
+    <ImageView
+        android:id="@+id/smartmedsLogo2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/smartmedslogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardWelcome"
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/smartmedsLogo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/logosimplesmartmeds"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.060000002" />
+
+        <Button
+            android:id="@+id/botonRegistrarse"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="150dp"
+            android:backgroundTint="#599BFE"
+            android:text="crear cuenta"
+            app:cornerRadius="20dp"
+            tools:layout_editor_absoluteX="179dp"
+            tools:layout_editor_absoluteY="657dp" />
+
+
+        <Button
+            android:id="@+id/botonInicioSesion"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="230dp"
+            android:backgroundTint="#1dd0eb"
+            android:text="Iniciar sesion"
+            app:cornerRadius="20dp" />
+
+
+        <TextView
+            android:id="@+id/textoRegistrarse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:text="¿Es tu primera vez?"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textoInicioSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210dp"
+            android:text="¿Ya tienes cuenta?"
+            android:textAlignment="center" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/instagram"
+        android:layout_width="39dp"
+        android:layout_height="72dp"
+        android:src="@drawable/instagram"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardWelcome" />
+
+    <ImageView
+        android:id="@+id/tiktok"
+        android:layout_width="39dp"
+        android:layout_height="72dp"
+        android:src="@drawable/tiktok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardWelcome" />
+
+    <ImageView
+        android:id="@+id/gmail"
+        android:layout_width="39dp"
+        android:layout_height="72dp"
+        android:src="@drawable/gmail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardWelcome" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

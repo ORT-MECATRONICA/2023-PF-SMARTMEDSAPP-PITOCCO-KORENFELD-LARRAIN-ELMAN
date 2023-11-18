@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoondulado"
+    tools:context=".LoginFragment">
+
+    <ImageView
+        android:id="@+id/smartmedsLogo3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/smartmedslogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardHome"
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:layout_marginHorizontal="30dp"
+
+        android:layout_marginVertical="130dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/logosimplesmartmeds"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.060000002" />
+
+        <TextView
+            android:id="@+id/textoEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="111dp"
+
+            android:text="Ingrese su email:"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/emaiLogin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="135dp"
+            android:background="@drawable/custom_edit_text"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:ems="10"
+            android:hint=" email"
+            android:inputType="textEmailAddress"
+
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/textoClave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="206dp"
+
+            android:text="Ingrese su contraseña:"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/claveLogin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="230dp"
+            android:background="@drawable/custom_edit_text"
+            android:drawableLeft="@drawable/baseline_password_24"
+            android:ems="10"
+            android:hint=" Contraseña"
+            android:inputType="textPassword"
+            android:padding="8dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/botonEntrar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="70dp"
+        android:backgroundTint="#599BFE"
+        android:text="entrar"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/inicioCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mantener sesion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

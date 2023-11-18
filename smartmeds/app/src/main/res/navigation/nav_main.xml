@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.smartmeds.smartmeds.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.smartmeds.smartmeds.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_appActivity"
+            app:destination="@id/appActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.smartmeds.smartmeds.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_initUserFragment"
+            app:destination="@id/initUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/initUserFragment"
+        android:name="com.smartmeds.smartmeds.initUserFragment"
+        android:label="fragment_init_user"
+        tools:layout="@layout/fragment_init_user" >
+        <action
+            android:id="@+id/action_initUserFragment_to_welcomeFragment2"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/appActivity"
+        android:name="com.smartmeds.smartmeds.AppActivity"
+        android:label="activity_app"
+        tools:layout="@layout/activity_app" />
+</navigation>

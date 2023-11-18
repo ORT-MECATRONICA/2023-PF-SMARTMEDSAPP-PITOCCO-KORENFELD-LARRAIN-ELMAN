@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoondulado"
+    tools:context=".fragments.HomeFragment">
+
+    <ImageView
+        android:id="@+id/smartmedsLogo3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/smartmedslogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <TextView
+        android:id="@+id/hora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="09:20"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14999998" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardHome1"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="10dp"
+
+        android:layout_marginVertical="10dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29000002">
+
+        <TextView
+            android:id="@+id/textoSiguientePastilla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Siguiente pastilla: Omeprazol" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardHome2"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="10dp"
+
+        android:layout_marginVertical="10dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44">
+
+        <TextView
+            android:id="@+id/textoSiguienteHorario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Siguiente horario: 10:40" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardHome3"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="10dp"
+
+        android:layout_marginVertical="10dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59000003">
+
+        <TextView
+            android:id="@+id/textoPastillasTomadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Pastillas tomadas: 2" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/botonApagarAlarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apagar Alarma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
